@@ -61,10 +61,41 @@ body {
   padding: 5px 10px;
   background-color: lightseagreen;
 }
+.delete-button {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: red;
+}
+.edit-button {
+  position: absolute;
+  top: 25px;
+  right: 95px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: rgb(115, 212, 115);
+  text-decoration:none;
+  color:black;
+}
 .save-button:hover {
   background-color: green;
   color: white;
+  cursor:pointer;
 }
+.delete-button:hover {
+  background-color: darkred;
+  color: white;
+  cursor:pointer;
+}
+.edit-button:hover {
+  background-color: rgb(23, 77, 6);
+  color: white;
+  cursor:pointer;
+}
+
+
 
 .home-button {
   padding: 5px 10px;
@@ -74,4 +105,21 @@ body {
 .movie-warning {
   color: red;
   text-align: center;
+}
+
+.edit-form{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+
+}
+.edit-form > input {
+  margin:.5rem;
+  text-align:center;
+  padding: 5px 10px;
+}
+
+.edit-form > .form-stars-list{
+  width: 50%;
 }
